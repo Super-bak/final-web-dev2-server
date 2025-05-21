@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "src/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "nodeVersion": "22.x"
-      }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -15,7 +12,9 @@
       "dest": "src/index.js"
     }
   ],
-  "env": {
-    "NODE_ENV": "production"
+  "build": {
+    "env": {
+      "PRISMA_GENERATE_DATAPROXY": "true"
+    }
   }
 } 
