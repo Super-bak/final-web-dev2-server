@@ -1,6 +1,6 @@
 # E-commerce Platform Backend
 
-This is the backend server for the e-commerce platform, built with Node.js, Express, and PostgreSQL.
+This is the backend server for the e-commerce platform, built with Node.js, Express, and prisma.
 
 ## Features
 
@@ -16,7 +16,6 @@ This is the backend server for the e-commerce platform, built with Node.js, Expr
 ## Prerequisites
 
 - Node.js (v14 or higher)
-- PostgreSQL (v12 or higher)
 - npm or yarn
 
 ## Installation
@@ -30,44 +29,6 @@ cd server
 2. Install dependencies:
 ```bash
 npm install
-```
-
-3. Create a `.env` file in the root directory and add the following environment variables:
-```env
-# Server Configuration
-PORT=5000
-NODE_ENV=development
-
-# Database Configuration
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/ecommerce?schema=public"
-
-# JWT Configuration
-JWT_SECRET="your-super-secret-jwt-key"
-JWT_EXPIRES_IN="7d"
-
-# CORS Configuration
-CORS_ORIGIN="http://localhost:5173"
-```
-
-4. Set up the database:
-```bash
-# Generate Prisma client
-npm run prisma:generate
-
-# Run database migrations
-npm run prisma:migrate
-```
-
-## Running the Server
-
-Development mode:
-```bash
-npm run dev
-```
-
-Production mode:
-```bash
-npm start
 ```
 
 ## API Endpoints
