@@ -15,10 +15,5 @@
       "src": "/(.*)",
       "dest": "src/index.js"
     }
-  ],
-  "build": {
-    "env": {
-      "PRISMA_GENERATE_DATAPROXY": "true"
-    }
-  }
+  ]
 } 
